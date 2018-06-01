@@ -1,6 +1,5 @@
 package frc.team6644.robot.subsytems;
 
-import edu.wpi.first.wpilibj.GenericHID;
 import edu.wpi.first.wpilibj.Spark;
 import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
@@ -21,8 +20,8 @@ public class DriveMotors extends Subsystem {
 	private DriveMotors() {
 		Spark left = new Spark(RobotPorts.LEFT_DRIVE_PWM_SPLIT.get());
 		Spark right = new Spark(RobotPorts.RIGHT_DRIVE_PWM_SPLIT.get());
-		left.setInverted(false);
-		right.setInverted(false);
+		//left.setInverted(true);
+		//right.setInverted(true);
 		drive = new DifferentialDrive(left, right);
 	}
 
